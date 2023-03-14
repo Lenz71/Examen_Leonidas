@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaDatos.Models
 {
-    internal class pacientes
+    public class pacientes
     {
         [Key]
         public int Codigo { get; set;}
@@ -22,6 +22,6 @@ namespace CapaDatos.Models
 
         public int hospitalId { get; set; }
         [ForeignKey("hospitalId")]
-        public hospital Hospital{ get; set; }
+        public hospital hospital{ get; set; }
     }
 }

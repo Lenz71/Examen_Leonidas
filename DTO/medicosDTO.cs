@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CapaDatos.Models
 {
-    public class medicos
+    public class medicosDTO
     {
-        [Key]
         public int Codigo { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }

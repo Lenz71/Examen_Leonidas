@@ -8,10 +8,9 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    internal class DBContext : DbContext
+    public class DBContext : DbContext
     {
-        public DBContext(DbContextOptions<DBContext> options) : base(options)
-        { }
+     
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             string conexion = "Data Source=.;Database=Examen;Integrated Security=True";
